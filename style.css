@@ -1,0 +1,220 @@
+:root{
+    --PaleBlue: hsl(243, 100%, 93%);
+    --GrayishBlue: hsl(229, 7%, 55%);
+    --DarkBlue: hsl(228, 56%, 26%);
+    --VeryDarkBlue: hsl(229, 57%, 11%);
+    --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   
+    height: 100vh;
+    background-image: url(images/bg-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main{
+    height: 100vh;
+   gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.sub-main{
+ height: 150px;
+ width: 230px;
+ background-color: var(--DarkBlue);
+ border-radius: 5px 70px 10px 10px;
+ align-items: center;
+ padding-left: 20px;
+}
+.sub-main .log img{
+    margin-top: 30px;
+}
+.sub-main .container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+.container .images, .images-1,
+.images-2{
+    height: 30px;
+    width: 35px;
+   background-color: #000;
+    align-items: center;
+    border-radius: 5px;
+    margin: 10px 10px;
+}
+.images img, .images-1 img,
+.images-2 img{
+    margin-left: 10px;
+    margin: 10px 10px;
+    height: 15px;
+}
+.container-1{
+padding-top: 20px;
+padding-left: 20px;
+margin-top: 30px;
+height: 90px;
+width: 350px;
+background-color: var(--DarkBlue);
+color: white;
+border-radius: 5px;
+}
+.container-1 span{
+    opacity: 0.5;
+}
+
+
+.container-1 .storage{
+    background-color: hsl(0, 0%, 0%);
+    width: 330px;
+   height: 18px;
+   border-radius: 30px;
+   margin-top: 20px;
+
+}
+.storage .slider{
+   -webkit-appearance: none;
+   width: 230px;
+   height: 17px;
+   background: linear-gradient(to right,hsl(6, 100%, 80%) , hsl(335, 100%, 65%) 100%, transparent 90%);
+   outline: none;
+   border-radius: 30px 30px;
+}
+.slider::-webkit-slider{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.slider::-moz-range-thumb{
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.storage .sub-storage{
+   display: block;
+ 
+
+}
+.sub-storage .left{
+    float: left;
+    text-align: left;
+    opacity: 70%;
+    padding-top: 5px;
+
+}
+.sub-storage .right{
+    float: right;
+    text-align: right;
+    padding-right:10px ;
+    opacity: 70%;
+    padding-top: 5px;
+
+}
+.container-2 {
+background-color: white;
+height: 70px;
+width: 200px;
+color: #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    border-radius: 10px 10px 10px 10px;
+   
+}
+.container-2 h1, h2,
+h3{
+    font-size: 4rem;
+    
+}
+.container-2 h3{
+padding-top: 12px;
+padding-right: 10px;
+}
+.container-2 h1{
+    padding-top: 10px;
+}
+.container-2 h4{
+opacity: 50%;
+font-size: 1rem;
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        font-size: 16px;
+        background-image: url(images/bg-mobile.png);
+      }
+      .main{
+        margin-top: 120px;
+        width: 100%;
+    padding: 10px;
+    height: auto;
+    display: grid;
+    gap: 0;
+    
+      }
+      .sub-main{
+        
+        font-size: 0.8rem;
+        margin-left: 30px;
+        height: 180px;
+        width: 280px;
+      }
+      .sub-main .log{
+        float: none;
+        height: auto;
+        width: 100%;
+
+          }
+          .container .images, .images-1,
+          .images-2{
+    height: 35px;
+    width: 45px;
+   
+}
+       .images img, .images-1 img,
+        .images-2 img{
+           height: 20px;
+}
+.container-1{
+   
+    height: 130px;
+    width: 300px;
+    margin-left: 20px;
+    
+    }
+    .container-1 .storage{
+        background-color: hsl(0, 0%, 0%);
+        width: 280px;
+       height: 18px;
+       border-radius: 30px;
+       margin-top: 20px;
+    
+    }
+    .storage .slider{
+      
+       width: 200px;
+       height: 17px;
+    }
+    .container-2 {
+        gap: 0;
+        margin-left: 70px;
+    }
+}
